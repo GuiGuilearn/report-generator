@@ -1,0 +1,31 @@
+student:
+  class_name: "23060101"
+  group: "第二组"
+  student_id: "2023000000"
+  name: "YourName"
+  school: "计算机科学与工程学院"
+
+output:
+  naming: "{class_name}_{group}_{student_id}_{name}.docx"
+
+llm:
+  provider: "deepseek"
+  model: "deepseek-chat"
+  base_url: "https://api.deepseek.com"
+  api_key_env: "DEEPSEEK_API_KEY"
+  temperature: 0.3
+  max_retries: 3
+  providers:
+    deepseek:
+      model: "deepseek-chat"
+      base_url: "https://api.deepseek.com"
+      api_key_env: "DEEPSEEK_API_KEY"
+    openai:
+      model: "gpt-4.1-mini"
+      base_url: "https://api.openai.com/v1"
+      api_key_env: "OPENAI_API_KEY"
+
+execution:
+  timeout_per_cell: 30
+  auto_fix_max_attempts: 3
+  sandbox: true

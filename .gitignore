@@ -1,0 +1,8 @@
+.venv/
+temp/
+logs/
+outputs/
+daily_notes/
+__pycache__/
+*.pyc
+.env

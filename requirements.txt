@@ -1,0 +1,8 @@
+PyYAML
+openai
+python-docx
+lxml
+Pillow
+matplotlib
+nbformat
+nbconvert
